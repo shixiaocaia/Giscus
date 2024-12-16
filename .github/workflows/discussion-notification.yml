@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Send email
         uses: dawidd6/action-send-mail@v3
-        with:
+        env:
           server_address: ${{secrets.MAIL_SERVER}}
           server_port: ${{secrets.MAIL_PORT}}
           username: ${{secrets.MAIL_USERNAME}}
