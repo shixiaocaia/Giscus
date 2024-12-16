@@ -25,8 +25,8 @@ jobs:
             Content: ${{ github.event.comment.body || github.event.discussion.body }}
             
             Link: ${{ github.event.comment.html_url || github.event.discussion.html_url }}            
-          to: ${{secrets.MAIL_TO}}
-          from: Blog Notification <${{secrets.MAIL_FROM}}>
+          to: shixiaocaia@gmail.com
+          from: Blog Notification shixiaocaia.fun
 
       # - name: ntfy-notifications
         # uses: niniyas/ntfy-action@master
